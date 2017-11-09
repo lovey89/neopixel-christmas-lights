@@ -86,7 +86,7 @@ void loop()
   switch (light_effect)
   {
     case 0:
-      colorWipe(strip.Color(200, 200, 200), 250);
+      colorWipeLayer(strip.Color(200, 200, 200), 250);
       break;
     case 1:
       police(1);
@@ -126,18 +126,6 @@ void loop()
   rainbowCycle(20);
 
   */
-}
-
-// Fill the dots one after the other with a color
-void colorWipe(uint32_t c, uint8_t wait)
-{
-  for (uint16_t i = 0; i < NO_OF_PIXELS; i++)
-  {
-    RETURN_IF_BUTTON_WAS_PRESSED();
-    strip.setPixelColor(i, c);
-    strip.show();
-    delay(wait);
-  }
 }
 
 void rainbow(uint8_t wait)

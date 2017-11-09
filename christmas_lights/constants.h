@@ -8,6 +8,8 @@
 #define NO_OF_PIXELS   7
 
 #define NO_OF_LAYERS   ((NO_OF_PIXELS + 1) / 2)
+#define MIN_LAYER      0
+#define MAX_LAYER      (NO_OF_LAYERS - 1)
 #define MIDDLE_PIXEL   (NO_OF_LAYERS - 1)
 #define MIN_PIXEL      0
 #define MAX_PIXEL      (NO_OF_PIXELS - 1)
