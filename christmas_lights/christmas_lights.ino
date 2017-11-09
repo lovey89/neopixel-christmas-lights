@@ -86,19 +86,19 @@ void loop()
   switch (light_effect)
   {
     case 0:
-      colorWipeLayer(strip.Color(200, 200, 200), 250);
+      colorWipeLayer(strip.Color(150, 150, 150), 250);
       break;
     case 1:
-      police(1);
-      break;
-    case 2:
       layerRainbow(50);
       break;
-    case 3:
+    case 2:
       layerRainbowMiddle(50);
       break;
-    case 4:
+    case 3:
       layerRainbowCycle(50);
+      break;
+    case 4:
+      police(1);
       break;
     default:
       // If there are no more light effects, start from the beginning

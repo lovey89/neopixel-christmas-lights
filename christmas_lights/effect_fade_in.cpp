@@ -19,7 +19,7 @@ void fadeInEffect()
   }
 
   delay(500);
-  fadeAllFromTo(10, 200, 25);
+  fadeAllFromTo(10, 150, 25);
 
   delay(300);
 }
