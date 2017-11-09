@@ -21,7 +21,7 @@ void colorWipeLayer(uint32_t color, uint8_t wait)
   {
     RETURN_IF_BUTTON_WAS_PRESSED();
     
-    setLayer(FALSE, color, i);
+    setLayer(color, i);
     strip.show();
     delay(wait);
   }

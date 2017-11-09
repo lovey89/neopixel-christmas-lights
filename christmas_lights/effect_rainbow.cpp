@@ -12,7 +12,7 @@ void layerRainbow(uint8_t wait)
     RETURN_IF_BUTTON_WAS_PRESSED();
     for (i = 0; i < NO_OF_LAYERS; i++)
     {
-      setLayer(FALSE, wheel((i * 10 + j) & 255), (NO_OF_LAYERS - 1) - i);
+      setLayer(wheel((i * 10 + j) & 255), (NO_OF_LAYERS - 1) - i);
     }
     strip.show();
     delay(wait);
@@ -28,7 +28,7 @@ void layerRainbowCycle(uint8_t wait)
     RETURN_IF_BUTTON_WAS_PRESSED();
     for (i = 0; i < NO_OF_LAYERS; i++)
     {
-      setLayer(FALSE, wheel(((i * 256 / NO_OF_LAYERS) + j) & 255), (NO_OF_LAYERS - 1) - i);
+      setLayer(wheel(((i * 256 / NO_OF_LAYERS) + j) & 255), (NO_OF_LAYERS - 1) - i);
     }
     strip.show();
     delay(wait);

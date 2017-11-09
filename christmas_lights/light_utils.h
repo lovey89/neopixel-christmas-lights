@@ -9,11 +9,11 @@ uint8_t getLeftPixelForLayer(uint8_t layer);
 
 uint8_t getRightPixelForLayer(uint8_t layer);
 
-void setRange(uint8_t showStrip, uint32_t color, uint8_t fromPixel, uint8_t toPixel);
+void setRange(uint32_t color, uint8_t fromPixel, uint8_t toPixel);
 
-void setPixels(uint8_t showStrip, uint32_t color, uint8_t noOfPixels, ...);
+void setPixels(uint32_t color, uint8_t noOfPixels, ...);
 
-void setLayer(uint8_t showStrip, uint32_t color, uint8_t layer);
+void setLayer(uint32_t color, uint8_t layer);
 
 void blank();
 

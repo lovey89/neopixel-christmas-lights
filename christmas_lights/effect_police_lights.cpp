@@ -25,9 +25,11 @@ void blinkRange(uint8_t fromPixel, uint8_t toPixel, uint32_t color, uint16_t bli
 {
   for (uint8_t i = 0; i < iterations; i++)
   {
-    setRange(TRUE, color, fromPixel, toPixel);
+    setRange(color, fromPixel, toPixel);
+    strip.show();
     delay(blinkDelay);
-    setRange(TRUE, strip.Color(0, 0, 0), fromPixel, toPixel);
+    setRange(strip.Color(0, 0, 0), fromPixel, toPixel);
+    strip.show();
     delay(blinkDelay);
   }
 }

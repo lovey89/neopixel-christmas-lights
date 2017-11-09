@@ -42,7 +42,8 @@ void fadeIn(uint8_t maxWhite, uint16_t wait, uint8_t layer)
 {
   for (uint8_t white = 0; white <= maxWhite; white++)
   {
-    setLayer(TRUE, strip.Color(white, white, white), layer);
+    setLayer(strip.Color(white, white, white), layer);
+    strip.show();
     delay(wait);
   }
 }

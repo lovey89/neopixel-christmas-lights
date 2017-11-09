@@ -34,20 +34,15 @@ uint8_t getRightPixelForLayer(uint8_t layer)
   return MIDDLE_PIXEL + layer;
 }
 
-void setRange(uint8_t showStrip, uint32_t color, uint8_t fromPixel, uint8_t toPixel)
+void setRange(uint32_t color, uint8_t fromPixel, uint8_t toPixel)
 {
   for (uint16_t pixel = fromPixel; pixel <= toPixel; pixel++)
   {
     strip.setPixelColor(pixel, color);
   }
-
-  if (showStrip)
-  {
-    strip.show();
-  }
 }
 
-void setPixels(uint8_t showStrip, uint32_t color, uint8_t noOfPixels, ...)
+void setPixels(uint32_t color, uint8_t noOfPixels, ...)
 {
   int pixels[noOfPixels];
 
@@ -69,17 +64,12 @@ void setPixels(uint8_t showStrip, uint32_t color, uint8_t noOfPixels, ...)
     int pixel = pixels[pixelIndex];
     strip.setPixelColor(pixel, color);
   }
-
-  if (showStrip)
-  {
-    strip.show();
-  }
 }
 
-void setLayer(uint8_t showStrip, uint32_t color, uint8_t layer)
+void setLayer(uint32_t color, uint8_t layer)
 {
   /* This works also for layer 0 (middle pixel) */
-  setPixels(showStrip, color, 2, getLeftPixelForLayer(layer), getRightPixelForLayer(layer));
+  setPixels(color, 2, getLeftPixelForLayer(layer), getRightPixelForLayer(layer));
 }
 
 void blank()
