@@ -92,10 +92,13 @@ void loop()
       police(1);
       break;
     case 2:
-      layerRainbowCycle(20);
+      layerRainbow(50);
       break;
     case 3:
-      layerRainbow(50);
+      layerRainbowMiddle(50);
+      break;
+    case 4:
+      layerRainbowCycle(50);
       break;
     default:
       // If there are no more light effects, start from the beginning
