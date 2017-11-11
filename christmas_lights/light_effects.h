@@ -11,6 +11,8 @@ void layerRainbowMiddle(uint8_t wait);
 
 void layerRainbowCycle(uint8_t wait);
 
+void theaterChaseRainbow(uint8_t wait);
+
 void colorWipe(uint32_t color, uint8_t wait);
 
 void colorWipeLayer(uint32_t color, uint8_t wait);
