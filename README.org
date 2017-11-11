@@ -3,3 +3,22 @@
 ** Schematic diagram
 
 [[./img/scheme.png]]
+
+*** Parts used in the diagram
+
+[[./img/parts.png]]
+
+From left to right these parts are:
+
+- 470Ω resistor
+- 10kΩ resistor
+- 100nF ceramic capacitor
+  + These are not polarized and you can connect them in any way
+- 1000uF/6.3V capacitor
+  + The short leg is minus. Sometimes there is a minus sign one the negative side as well
+- NeoPixel 5mm Through-Hole LED. The legs from left to right represent (the flat side is to the right):
+  + Short leg 1: Data in
+  + Short leg 2: +5V
+  + Long leg 1: Ground
+  + Long leg 2: Data out
+- A push button
