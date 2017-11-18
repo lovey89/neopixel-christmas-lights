@@ -22,3 +22,13 @@ From left to right these parts are:
   + Long leg 1: Ground
   + Long leg 2: Data out
 - A push button
+
+** How to compile
+
+Download the arduino IDE. Install the following libraries (other versions than
+the ones given will most probably work as well but I compiled it with these versions):
+
+- Adafruit NeoPixel version 1.1.3
+- EnableInterrupt version 0.9.8
+
+To install a library go to =Sketch= -> =Include Library= -> =Manage Libraries...=

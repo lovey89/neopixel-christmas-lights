@@ -3,7 +3,8 @@
 
 #include "global_variables.h"
 
-/* Macro to easily return from a running function if the button is pressed */
+/* Macro to easily return from a running function if the button is
+   pressed. The macro also resets the button status to FALSE */
 #define RETURN_IF_BUTTON_WAS_PRESSED() \
   if (button_pressed)\
   {\
